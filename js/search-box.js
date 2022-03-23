@@ -1,12 +1,9 @@
-// import { febHolidays } from "./carousel-data.js";
-// var x = febHolidays[0];
-
-import { buildSelections } from "./carousel-data.js";
+import { buildChoices } from "./data.js";
 
 async function search() {
   (function () {
     setTimeout(
-      buildSelections,
+      buildChoices,
       Math.floor(Math.random() * 3000),
       document.querySelector("#searchText").value
     );
@@ -15,5 +12,5 @@ async function search() {
 }
 
 document.querySelector("#searchText").addEventListener("keyup", (e) => {
-  search();
+  search(document.querySelector("#searchText").value);
 });

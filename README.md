@@ -4,8 +4,14 @@
 
 ### Steps:
 
-1. Export the February holidays array in carousel-data.js and import it to search-box.js.
+This is currently located at "D:\Computer Science\JavaScript\Front End Use Cases\Search Box\Async-Await" locally
+
+1. Export the choices array in data.js and import it to search-box.js.
 1. Create a function that wraps around a setTimeout with a random duration between 0 and 3 seconds in search-box.js.
+1. Have the function that updates the list close over the list element reference.
+
+1. Alter the logic to allow for differing numbers of items in the list to function properly...including zero items.
+1. Have buildChoices be called on page load instead of hardcoded in the script.
 
 ### Notes:
 
